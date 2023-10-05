@@ -1,4 +1,10 @@
 def merge_list(list1, list2):
+    if not isinstance(list1, list) or not isinstance(list2, list):
+        return "invalid input"
+    for num in list1 + list2:
+        if not isinstance(num, int):
+            return "all list elements must be integers"
+
     result = list1 + list2
 
     def sort(array):
@@ -13,5 +19,5 @@ def merge_list(list1, list2):
     return result
 
 print(merge_list([1, 5, 3, 7], [6, 2, 4]))
-print(merge_list([1, 5, 3, 2], [2, 1, 4, 5, 6]))
-print(merge_list([1, 5, 9], []))
+print(merge_list([1, 5, 3, 2], 3))
+print(merge_list([1, 5, 9], ["hello", "world"]))
