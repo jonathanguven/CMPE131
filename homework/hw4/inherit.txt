@@ -1,0 +1,8 @@
+CMPE 131 - Question 5 - Jonathan Nguyen
+
+Why use inheritance?
+There are several benefits to use the OOP concept of inheritance. 
+
+One reason is to make code more reusable, and to reduce redundancy when writing code. Inheritance allows for new classes to be derived from other classes, which inherits the properties and methods of that existing class. This makes it so that one does not have to rewrite the same code over and over for new classes.
+
+Another reason is to establish a hierarchy in your code, as inheritance lets you create and understand the relationship between your classes. It lets multiple classes be derived from one superclass, giving you flexibility in your code. For example, you can have a base class called ‘Animal’, with derived classes being “Dog”, “Cat”, and “Cow”. You can treat these three classes as generic “Animal” objects, making them easier to manage and modify.
