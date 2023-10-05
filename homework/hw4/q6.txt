@@ -1,0 +1,4 @@
+CMPE 131 - Q6 - Jonathan Nguyen
+1. Variable 'a' remains unchanged after the call to 'increment_int_a'
+2. Variable 'b' gets changed after the call to 'increment_int_b'
+3. The answer differs because variable 'a' is an immutable object, whereas variable 'b' is a mutable object. Therefore, the way they are passed into functions differ as well. Mutable objects like variable 'b' (a dictionary) are passed by reference, meaning the object is passed straight in as a parameter. However, immutable objects such as variable 'a' are passed by value, since they cannot be changed. Instead, a copy of the parameter's value is used in the function, instead of having the actual value of the variable changed by the function.
